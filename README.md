@@ -54,16 +54,7 @@ Buka terminal PostgreSQL (psql) atau pgAdmin, lalu jalankan:
 CREATE DATABASE indobat_inventory;
 ```
 
-### 2. Buat User Database (Opsional)
-
-Jika ingin membuat user khusus:
-
-```sql
-CREATE USER indobat_user WITH PASSWORD 'your_password';
-GRANT ALL PRIVILEGES ON DATABASE indobat_inventory TO indobat_user;
-```
-
-### 3. Catat Connection String
+### 2. Catat Connection String
 
 Format connection string PostgreSQL:
 ```
