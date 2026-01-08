@@ -72,8 +72,13 @@ postgresql://username:password@localhost:5432/database_name?sslmode=disable
 
 Contoh:
 ```
+<!-- Dengan password -->
 postgresql://postgres:postgres@localhost:5432/indobat_inventory?sslmode=disable
+<!-- Tanpa password -->
+postgresql://postgres@localhost:5432/indobat_inventory?sslmode=disable
 ```
+
+
 
 ## ⚙️ Setup Backend
 
@@ -104,7 +109,12 @@ cp .env.example .env
 Edit file `.env` dan sesuaikan dengan konfigurasi database Anda:
 
 ```env
+<!-- Dengan password -->
 DB_CONNECTION_STRING=postgresql://postgres:postgres@localhost:5432/indobat_inventory?sslmode=disable
+
+<!-- Tanpa password -->
+DB_CONNECTION_STRING=postgresql://postgres@localhost:5432/indobat_inventory?sslmode=disable
+
 PORT=8000
 ```
 
