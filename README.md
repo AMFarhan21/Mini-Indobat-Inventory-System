@@ -67,7 +67,11 @@ GRANT ALL PRIVILEGES ON DATABASE indobat_inventory TO indobat_user;
 
 Format connection string PostgreSQL:
 ```
+<!-- Dengan password -->
 postgresql://username:password@localhost:5432/database_name?sslmode=disable
+
+<!-- Tanpa password -->
+postgresql://username@localhost:5432/database_name?sslmode=disable
 ```
 
 Contoh:
