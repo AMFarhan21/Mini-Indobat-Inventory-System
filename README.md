@@ -74,6 +74,7 @@ Contoh:
 ```
 <!-- Dengan password -->
 postgresql://postgres:postgres@localhost:5432/indobat_inventory?sslmode=disable
+
 <!-- Tanpa password -->
 postgresql://postgres@localhost:5432/indobat_inventory?sslmode=disable
 ```
