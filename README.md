@@ -105,7 +105,7 @@ Edit file `.env` dan sesuaikan dengan konfigurasi database Anda:
 
 ```env
 DB_CONNECTION_STRING=postgresql://postgres:postgres@localhost:5432/indobat_inventory?sslmode=disable
-PORT=8080
+PORT=8000
 ```
 
 > **Catatan:** Ganti `postgres:postgres` dengan username dan password PostgreSQL Anda.
@@ -145,7 +145,7 @@ cp .env.example .env
 Edit file `.env`:
 
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:8080
+NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
 > **Catatan:** Pastikan port sesuai dengan port backend yang dikonfigurasi di `.env` backend.
@@ -160,7 +160,7 @@ Buka terminal di folder `backend`:
 go run app/echo-server/main.go
 ```
 
-Backend akan berjalan di `http://localhost:8080`
+Backend akan berjalan di `http://localhost:8000`
 
 Output yang diharapkan:
 ```
@@ -232,7 +232,7 @@ mini-indobat inventory system/
 
 ### Frontend tidak bisa connect ke backend
 
-1. Pastikan backend sudah berjalan di port 8080
+1. Pastikan backend sudah berjalan di port 8000
 2. Cek `NEXT_PUBLIC_API_URL` di `.env` frontend
 3. Pastikan tidak ada CORS error (backend sudah menggunakan middleware CORS)
 
@@ -247,15 +247,10 @@ mini-indobat inventory system/
 ### Products
 - `GET /products` - Get all products
 - `POST /products` - Create new product
-- `GET /products/:id` - Get product by ID
-- `PUT /products/:id` - Update product
-- `DELETE /products/:id` - Delete product
 
 ### Orders
-- `GET /orders` - Get all orders
 - `POST /orders` - Create new order
-- `GET /orders/:id` - Get order by ID
 
-## 📄 License
+### Postman Collection
+https://documenter.getpostman.com/view/45402659/2sBXVeFXVi
 
-This project is created for technical interview purposes.
